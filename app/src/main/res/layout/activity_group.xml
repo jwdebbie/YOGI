@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9D99F">
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/logo" />
+
+    <!-- 참여 중인 그룹 텍스트 -->
+    <TextView
+        android:id="@+id/joinedGroupsLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logoImageView"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:text="참여중인 그룹"
+        android:textStyle="bold"
+        android:textColor="#6A4228"
+        android:textSize="24sp" />
+
+    <!-- 그룹 리스트를 보여주는 RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/joinedGroupsList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/joinedGroupsLabel"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true" />
+
+    <!-- 그룹 만들기 버튼 -->
+    <Button
+        android:id="@+id/createGroupButton"
+        android:layout_width="250dp"
+        android:layout_height="55dp"
+        android:layout_below="@id/joinedGroupsList"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:text="그룹 만들기"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF" />
+
+    <!-- 그룹 참여하기 버튼 -->
+    <Button
+        android:id="@+id/joinGroupButton"
+        android:layout_width="250dp"
+        android:layout_height="55dp"
+        android:layout_below="@id/createGroupButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="그룹 참여하기"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>

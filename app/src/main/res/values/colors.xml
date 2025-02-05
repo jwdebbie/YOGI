@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="custom_button_color">#f9d99f</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="button_background_default">#6A4228</color>
+    <color name="button_background_pressed">#8A5D3B</color>
+    <color name="brown">#6A5528</color>
+
+
+
+
+</resources>

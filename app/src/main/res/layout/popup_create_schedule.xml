@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFFF">
+
+    <EditText
+        android:id="@+id/schedule_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="약속 이름"/>
+
+    <EditText
+        android:id="@+id/date_range"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="날짜 범위 (예: 12/20 - 12/25)"/>
+
+    <EditText
+        android:id="@+id/vote_end_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="투표 종료 시간 (예: 12/19 18:00)"/>
+
+    <Button
+        android:id="@+id/submit_schedule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="제출"
+        android:backgroundTint="#6A4228"/>
+</LinearLayout>

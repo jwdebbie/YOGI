@@ -1,0 +1,183 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f9d99f"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- 로고 이미지 -->
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/logo" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <!-- 그룹 이름 -->
+    <TextView
+        android:id="@+id/groupName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="모프 팀플"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:background="#6A5528"
+        android:paddingVertical="12dp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <!-- 버튼과 월 텍스트를 포함하는 레이아웃 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/suggest_button"
+            android:layout_width="20dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:backgroundTint="#6A5528"
+            android:text="약속 제안하기"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"/>
+
+        <!-- 12월 텍스트뷰 (중앙에 위치) -->
+        <TextView
+            android:id="@+id/month"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="12월"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#6A5528"/>
+
+        <!-- 장소 정하기 버튼 -->
+        <Button
+            android:id="@+id/location_button"
+            android:layout_width="20dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:backgroundTint="#6A5528"
+            android:text="장소 정하기"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+
+
+
+    <Space android:layout_width="match_parent" android:layout_height="30dp"/>
+    <TableLayout android:layout_width="560dp" android:layout_height="760dp" android:layout_gravity="center" android:layout_marginTop="10dp" android:layout_marginLeft="5dp">
+        <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:id="@+id/textView42" android:layout_width="80dp" android:layout_height="40dp" android:background="@drawable/border_layout" android:gravity="center" android:text="일"/>
+            <TextView android:id="@+id/textView41" android:layout_width="80dp" android:layout_height="40dp" android:background="@drawable/border_layout" android:gravity="center" android:text="월"/>
+            <TextView android:id="@+id/textView40" android:layout_width="80dp" android:layout_height="40dp" android:background="@drawable/border_layout" android:gravity="center" android:text="화"/>
+            <TextView android:id="@+id/textView39" android:layout_width="80dp" android:layout_height="40dp" android:background="@drawable/border_layout" android:gravity="center" android:text="수"/>
+            <TextView android:id="@+id/textView38" android:layout_width="80dp" android:layout_height="40dp" android:background="@drawable/border_layout" android:gravity="center" android:text="목"/>
+            <TextView android:id="@+id/textView16" android:layout_width="80dp" android:layout_height="40dp" android:background="@drawable/border_layout" android:gravity="center" android:text="금"/>
+            <TextView android:id="@+id/textView" android:layout_width="80dp" android:layout_height="40dp" android:background="@drawable/border_layout" android:gravity="center" android:text="토"/>
+        </TableRow>
+        <TableRow android:layout_width="80dp" android:layout_height="140dp" android:id="@+id/row1">
+            <TextView android:id="@+id/textView2" android:layout_width="80dp" android:layout_height="140dp" android:gravity="right" android:background="@drawable/border_layout" android:text="1"/>
+            <TextView android:id="@+id/textView3" android:layout_width="80dp" android:layout_height="140dp" android:gravity="right" android:background="@drawable/border_layout" android:text="2"/>
+            <TextView android:id="@+id/textView4" android:layout_width="80dp" android:layout_height="140dp" android:gravity="right" android:background="@drawable/border_layout" android:text="3"/>
+            <TextView android:id="@+id/textView5" android:layout_width="80dp" android:layout_height="140dp" android:gravity="right" android:background="@drawable/border_layout" android:text="4"/>
+            <TextView android:id="@+id/textView6" android:layout_width="80dp" android:layout_height="140dp" android:gravity="right" android:background="@drawable/border_layout" android:text="5"/>
+            <TextView android:id="@+id/textView7" android:layout_width="80dp" android:layout_height="140dp" android:gravity="right" android:background="@drawable/border_layout" android:text="6"/>
+            <TextView android:id="@+id/textView8" android:layout_width="80dp" android:layout_height="140dp" android:gravity="right" android:background="@drawable/border_layout" android:text="7"/>
+        </TableRow>
+        <TableRow android:layout_width="80dp" android:layout_height="140dp" android:id="@+id/row2">
+            <TextView android:id="@+id/textView9" android:layout_width="80dp" android:layout_height="140dp" android:gravity="right" android:background="@drawable/border_layout" android:text="8"/>
+            <TextView android:id="@+id/textView10" android:layout_width="80dp" android:layout_height="140dp" android:gravity="right" android:background="@drawable/border_layout" android:text="9"/>
+            <TextView android:id="@+id/textView11" android:layout_width="80dp" android:layout_height="140dp" android:gravity="right" android:background="@drawable/border_layout" android:text="10"/>
+            <TextView android:id="@+id/textView12" android:layout_width="80dp" android:layout_height="140dp" android:gravity="right" android:background="@drawable/border_layout" android:text="11"/>
+            <TextView android:id="@+id/textView13" android:layout_width="80dp" android:layout_height="140dp" android:gravity="right" android:background="@drawable/border_layout" android:text="12"/>
+            <TextView android:id="@+id/textView14" android:layout_width="80dp" android:layout_height="140dp" android:gravity="right" android:background="@drawable/border_layout" android:text="13"/>
+            <TextView android:id="@+id/textView15" android:layout_width="80dp" android:layout_height="140dp" android:gravity="right" android:background="@drawable/border_layout" android:text="14"/>
+        </TableRow>
+        <TableRow android:layout_width="80dp" android:layout_height="140dp" android:id="@+id/row3">
+            <TextView android:id="@+id/textView17" android:layout_width="80dp" android:layout_height="140dp" android:gravity="right" android:background="@drawable/border_layout" android:text="15"/>
+            <TextView android:id="@+id/textView18" android:layout_width="80dp" android:layout_height="140dp" android:gravity="right" android:background="@drawable/border_layout" android:text="16"/>
+            <TextView android:id="@+id/textView19" android:layout_width="80dp" android:layout_height="140dp" android:gravity="right" android:background="@drawable/border_layout" android:text="17"/>
+            <TextView android:id="@+id/textView20" android:layout_width="80dp" android:layout_height="140dp" android:gravity="right" android:background="@drawable/border_layout" android:text="18"/>
+            <TextView android:id="@+id/textView21" android:layout_width="80dp" android:layout_height="140dp" android:gravity="right" android:background="@drawable/border_layout" android:text="19"/>
+            <TextView android:id="@+id/textView22" android:layout_width="80dp" android:layout_height="140dp" android:gravity="right" android:background="@drawable/border_layout" android:text="20"/>
+            <TextView android:id="@+id/textView23" android:layout_width="80dp" android:layout_height="140dp" android:gravity="right" android:background="@drawable/border_layout" android:text="21"/>
+        </TableRow>
+        <TableRow android:layout_width="80dp" android:layout_height="140dp" android:id="@+id/row4">
+            <TextView android:id="@+id/textView24" android:layout_width="80dp" android:layout_height="140dp" android:gravity="right" android:background="@drawable/border_layout" android:text="22"/>
+            <TextView android:id="@+id/textView25" android:layout_width="80dp" android:layout_height="140dp" android:gravity="right" android:background="@drawable/border_layout" android:text="23"/>
+            <TextView android:id="@+id/textView27" android:layout_width="80dp" android:layout_height="140dp" android:gravity="right" android:background="@drawable/border_layout" android:text="24"/>
+            <TextView android:id="@+id/textView26" android:layout_width="80dp" android:layout_height="140dp" android:gravity="right" android:background="@drawable/border_layout" android:text="25"/>
+            <TextView android:id="@+id/textView28" android:layout_width="80dp" android:layout_height="140dp" android:gravity="right" android:background="@drawable/border_layout" android:text="26"/>
+            <TextView android:id="@+id/textView29" android:layout_width="80dp" android:layout_height="140dp" android:gravity="right" android:background="@drawable/border_layout" android:text="27"/>
+            <TextView android:id="@+id/textView30" android:layout_width="80dp" android:layout_height="140dp" android:gravity="right" android:background="@drawable/border_layout" android:text="28"/>
+        </TableRow>
+        <TableRow android:layout_width="80dp" android:layout_height="140dp" android:id="@+id/row5">
+            <TextView android:id="@+id/textView31" android:layout_width="80dp" android:layout_height="140dp" android:gravity="right" android:background="@drawable/border_layout" android:text="29"/>
+            <TextView android:id="@+id/textView32" android:layout_width="80dp" android:layout_height="140dp" android:gravity="right" android:background="@drawable/border_layout" android:text="30"/>
+            <TextView android:id="@+id/textView33" android:layout_width="80dp" android:layout_height="140dp" android:gravity="right" android:background="@drawable/border_layout" android:text="31"/>
+            <TextView android:id="@+id/textView34" android:layout_width="80dp" android:layout_height="140dp" android:background="@drawable/border_layout"/>
+            <TextView android:id="@+id/textView35" android:layout_width="80dp" android:layout_height="140dp" android:background="@drawable/border_layout"/>
+            <TextView android:id="@+id/textView36" android:layout_width="80dp" android:layout_height="140dp" android:background="@drawable/border_layout"/>
+            <TextView android:id="@+id/textView37" android:layout_width="80dp" android:layout_height="140dp" android:background="@drawable/border_layout"/>
+        </TableRow>
+    </TableLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#6A5528"
+        android:padding="10dp">
+
+        <!-- 하단 텍스트 -->
+        <TextView
+            android:id="@+id/footer_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="‘뒷풀이’ 약속 정하기가 시작되었어요.\n24.12.17 (목) 종료예정"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:gravity="center" />
+
+        <!-- 참여하기 버튼 -->
+        <Button
+            android:id="@+id/join_button"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/footer_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="#C42E22"
+            android:text="참여하기"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <!-- 결과보기 버튼 -->
+        <Button
+            android:id="@+id/result_button"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/footer_text"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:background="#FFFFFF"
+            android:text="결과보기"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</LinearLayout>
