@@ -11,8 +11,8 @@ YOGI 어플리케이션은 바쁜 현대인들이 보다 효율적으로 약속�
 A)	로그인 및 회원가입
 •	기능: 사용자가 ID와 비밀번호로 로그인하거나 새 계정을 생성할 수 있습니다.
 •	화면:
-o	activity_login.xml – 로그인 화면
-o	activity_signup.xml – 회원가입 화면
+    o	activity_login.xml – 로그인 화면
+    o	activity_signup.xml – 회원가입 화면
 •	설명: 로그인에 성공하면 그룹 목록 화면으로 이동하며, 향후 백엔드와의 연동을 통해 보안성을 강화할 예정입니다.
 
 2.2 그룹 관리 기능
@@ -20,14 +20,14 @@ o	activity_signup.xml – 회원가입 화면
 A)	그룹 목록 보기
 •	기능: 사용자가 참여 중인 그룹 목록을 확인할 수 있습니다.
 •	화면:
-o	activity_group.xml – 그룹 목록 화면
+    o	activity_group.xml – 그룹 목록 화면
 •	설명: 그룹 이름과 함께 ‘이름 변경’, ‘입장하기’ 버튼을 통해 그룹을 관리합니다.
 
 B)	그룹 생성 및 참여
 •	기능: 새로운 그룹을 생성하거나 이미 존재하는 그룹에 참여할 수 있습니다.
 •	화면:
-o	popup_create_schedule.xml – 그룹 생성 팝업
-o	popup_join_group.xml – 그룹 참여 팝업
+    o	popup_create_schedule.xml – 그룹 생성 팝업
+    o	popup_join_group.xml – 그룹 참여 팝업
 •	설명: 그룹을 생성하면 고유 코드를 발급받고, 해당 코드를 통해 다른 사용자가 그룹에 참여할 수 있습니다.
 
 2.3 캘린더 및 일정 관리 기능
@@ -35,7 +35,7 @@ o	popup_join_group.xml – 그룹 참여 팝업
 A) 캘린더 보기
 •	기능: 그룹별 캘린더에서 일정을 확인할 수 있습니다.
 •	화면:
-o	activity_calendar.xml – 그룹 캘린더 화면
+    o	activity_calendar.xml – 그룹 캘린더 화면
 •	설명: 캘린더에 약속 날짜와 시간을 색상으로 구분하여 표시합니다.
 
 B) 약속 제안 및 장소 정하기
@@ -48,15 +48,15 @@ o	‘장소 정하기’ 버튼 – (향후 추가개발 진행예정)
 C) 일정 확정
 •	기능: 투표를 통해 확정된 약속 시간을 캘린더에 표시합니다.
 •	화면:
-o	popup_schedule_results.xml – 스케줄 투표 결과 팝업
-o	popup_second.xml – 확정 알림 팝업
+    o	popup_schedule_results.xml – 스케줄 투표 결과 팝업
+    o	popup_second.xml – 확정 알림 팝업
 •	설명: ‘완료하기’ 버튼을 누르면 확정된 일정이 캘린더에 표시됩니다.
 2.4 타임테이블 기능
 
 사용자별 가능한 스케줄 체크
 •	기능: 사용자가 가능한 시간을 선택하여 팀원들과의 약속 시간을 조율합니다.
 •	화면:
-o	activity_timetable.xml – 시간표 화면
+    o	activity_timetable.xml – 시간표 화면
 •	설명: 체크된 시간대를 기반으로 최적의 약속 시간을 계산하고 결과를 표시합니다.
 
 
